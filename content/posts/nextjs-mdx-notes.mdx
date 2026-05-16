@@ -1,0 +1,37 @@
+---
+title: "Next.js and MDX Notes"
+description: "A compact reference for how this project turns MDX files into blog posts, tag pages, category pages, and search results."
+date: "2026-05-14"
+category: "Web Development"
+tags: ["Next.js", "MDX", "TypeScript"]
+---
+
+The site uses file-based content. This keeps the first version predictable: no CMS, no database, and no account system.
+
+## Content loading
+
+The content index lives in `lib/posts.ts`. It reads every `.mdx` file from `content/posts`, parses frontmatter, and returns sorted post summaries.
+
+The same source powers:
+
+- `/blog`
+- `/blog/[slug]`
+- `/tags`
+- `/tags/[tag]`
+- `/categories/[category]`
+- `/search`
+
+## Rendering MDX
+
+The detail page compiles MDX on the server. That means posts can eventually include custom components while still behaving like normal Markdown today.
+
+```tsx
+const { content } = await compileMDX({
+  source: post.content,
+  components: mdxComponents
+});
+```
+
+## Search
+
+Search is intentionally small for the MVP. The server sends a compact index to a client component, and the browser filters across title, description, tags, category, and body text.

@@ -1,10 +1,12 @@
 import { useRoutes } from "react-router-dom";
 import HeadNav from "./components/headNav";
+import routes from "./router/route";
 
 function App() {
   return (
     <div>
       <HeadNav />
+      {useRoutes(routes)}
     </div>
   );
 }

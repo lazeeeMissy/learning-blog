@@ -37,64 +37,107 @@
     --bg: #16171d;
     --border: #2e303a;
     --code-bg: #1f2028;
+
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
+
     --social-bg: rgba(47, 48, 58, 0.5);
+
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-    // card
+
+    /* card */
     --card-bg:
       linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.055),
-        rgba(255, 255, 255, 0.025)
+        180deg,
+        rgba(255, 255, 255, 0.085),
+        rgba(255, 255, 255, 0.035)
       ),
-      rgba(31, 32, 40, 0.72);
+      rgba(39, 40, 49, 0.88);
 
     --card-bg-hover:
       linear-gradient(
-        135deg,
-        rgba(192, 132, 252, 0.12),
-        rgba(255, 255, 255, 0.04) 42%,
-        rgba(255, 255, 255, 0.025)
+        180deg,
+        rgba(255, 255, 255, 0.12),
+        rgba(255, 255, 255, 0.045)
       ),
-      rgba(36, 37, 47, 0.86);
+      rgba(45, 46, 56, 0.92);
 
     --card-bg-active:
       linear-gradient(
-        135deg,
-        rgba(192, 132, 252, 0.18),
-        rgba(255, 255, 255, 0.035)
+        180deg,
+        rgba(192, 132, 252, 0.16),
+        rgba(255, 255, 255, 0.04)
       ),
-      rgba(25, 26, 34, 0.96);
+      rgba(34, 35, 44, 0.96);
 
-    --card-border: rgba(255, 255, 255, 0.08);
+    --card-border: rgba(255, 255, 255, 0.1);
     --card-border-hover: rgba(192, 132, 252, 0.28);
     --card-border-active: rgba(192, 132, 252, 0.42);
 
     --card-shadow:
-      rgba(0, 0, 0, 0.35) 0 16px 32px -18px, rgba(192, 132, 252, 0.12) 0 0 0 1px;
-    // card-button
-    --card-button-bg: rgba(255, 255, 255, 0.04);
-    --card-button-bg-hover: rgba(255, 255, 255, 0.1);
+      inset rgba(255, 255, 255, 0.08) 0 1px 0,
+      rgba(0, 0, 0, 0.45) 0 14px 28px -14px;
 
-    --card-button-active-bg: linear-gradient(
-      135deg,
-      rgba(45, 212, 191, 0.95),
-      rgba(20, 184, 166, 0.82)
-    );
+    --card-shadow-hover:
+      inset rgba(255, 255, 255, 0.1) 0 1px 0,
+      rgba(192, 132, 252, 0.18) 0 0 0 1px, rgba(0, 0, 0, 0.5) 0 18px 34px -16px;
 
-    --card-button-border: rgba(255, 255, 255, 0.08);
-    --card-button-border-hover: rgba(94, 234, 212, 0.35);
-    --card-button-border-active: rgba(153, 246, 228, 0.9);
+    --card-shadow-active:
+      inset rgba(255, 255, 255, 0.06) 0 1px 0,
+      rgba(0, 0, 0, 0.55) 0 8px 18px -12px;
+
+    /* card button */
+    --card-button-bg:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.085),
+        rgba(255, 255, 255, 0.035)
+      ),
+      rgba(255, 255, 255, 0.035);
+
+    --card-button-bg-hover:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.13),
+        rgba(255, 255, 255, 0.055)
+      ),
+      rgba(255, 255, 255, 0.055);
+
+    --card-button-active-bg:
+      radial-gradient(
+        circle at 35% 24%,
+        rgba(255, 255, 255, 0.48),
+        transparent 32%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(94, 234, 212, 0.98),
+        rgba(20, 184, 166, 0.86)
+      );
+
+    --card-button-border: rgba(255, 255, 255, 0.1);
+    --card-button-border-hover: rgba(255, 255, 255, 0.2);
+    --card-button-border-active: rgba(153, 246, 228, 0.95);
 
     --card-button-text: var(--text);
-    --card-button-text-active: #042f2e;
+    --card-button-text-active: #032f2c;
+
+    --card-button-shadow:
+      inset rgba(255, 255, 255, 0.08) 0 1px 0,
+      rgba(0, 0, 0, 0.3) 0 8px 16px -10px;
+
+    --card-button-shadow-hover:
+      inset rgba(255, 255, 255, 0.12) 0 1px 0,
+      rgba(0, 0, 0, 0.42) 0 10px 18px -10px;
 
     --card-button-shadow-active:
-      rgba(45, 212, 191, 0.45) 0 0 0 1px, rgba(45, 212, 191, 0.42) 0 0 24px,
-      rgba(0, 0, 0, 0.35) 0 10px 20px -10px;
+      inset rgba(255, 255, 255, 0.38) 0 1px 0,
+      inset rgba(255, 255, 255, 0.18) 0 0 0 1px,
+      rgba(45, 212, 191, 0.5) 0 0 22px,
+      rgba(45, 212, 191, 0.28) 0 12px 26px -8px,
+      rgba(0, 0, 0, 0.5) 0 14px 24px -12px;
   }
 
   #social .button-icon {
@@ -102,18 +145,20 @@
   }
 
   .card {
+    width: 100%;
     padding: 5px 15px;
-    width: max-content;
+    margin-bottom: 10px;
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 28px;
-    box-shadow: var(--shadow);
+    box-shadow: var(--card-shadow);
+
     transition:
       background 180ms ease,
       border-color 180ms ease,
-      box-shadow 180ms ease,
-      transform 180ms ease;
+      box-shadow 180ms ease;
   }
+
   .card-clickable {
     cursor: pointer;
 
@@ -127,21 +172,21 @@
   .card-clickable:hover {
     background: var(--card-bg-hover);
     border-color: var(--card-border-hover);
-    box-shadow: var(--card-shadow);
+    box-shadow: var(--card-shadow-hover);
     transform: translateY(-2px);
   }
 
   .card-clickable:active {
     background: var(--card-bg-active);
     border-color: var(--card-border-active);
+    box-shadow: var(--card-shadow-active);
     transform: translateY(0);
   }
 
   .card button {
-    width: max-content;
-    height: max-content;
-    padding: 5px 5px;
-    margin: 0 5px;
+    padding: 8px 8px;
+    margin: 0 4px;
+
     display: inline-grid;
     place-items: center;
 
@@ -149,6 +194,7 @@
     background: var(--card-button-bg);
     border: 1px solid var(--card-button-border);
     border-radius: 999px;
+    box-shadow: var(--card-button-shadow);
 
     font: inherit;
     line-height: 1;
@@ -165,6 +211,7 @@
   .card button:hover {
     background: var(--card-button-bg-hover);
     border-color: var(--card-button-border-hover);
+    box-shadow: var(--card-button-shadow-hover);
     transform: translateY(-1px);
   }
 
@@ -233,6 +280,7 @@ code {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 li {

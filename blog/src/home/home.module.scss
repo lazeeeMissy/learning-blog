@@ -1,0 +1,56 @@
+.homeWrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.leftWrapper {
+  width: calc(100% - 50px);
+
+  display: flex;
+  flex-direction: column;
+  .avatar {
+    // width: 230px;
+  }
+  .menusWrapper {
+    // width: 230px;
+
+    h3 {
+      color: #fff;
+    }
+    li {
+      margin-bottom: 5px;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.rightWrapper {
+  padding-right: 40px;
+  .cardWrapper {
+    padding: 20px 20px;
+    h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+  }
+}
+.tagsWrapper {
+  display: flex;
+  width: inherit;
+  margin-top: 20px;
+  gap: 10px; //也可用下面的
+
+  .tagItem {
+    // margin: 0 10px;
+    // &:first-child {
+    //   margin-left: 0;
+    // }
+  }
+}
+//css module .tagsWrapper:first-child 这种全局 class 写法通常匹配不到，因为真实 DOM 里的 class 会被编译：
+// .tagsWrapper:first-child {
+//   margin: 0;
+// }

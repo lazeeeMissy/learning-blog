@@ -6,8 +6,8 @@ export default function HeadNav() {
   const path = useLocation();
   const navigate = useNavigate();
   return (
-    <>
-      <Card>
+    <div style={{ width: "180px" }}>
+      <Card style={{ marginBottom: "20px" }}>
         {menus.map((menu) => (
           <button
             key={menu.title}
@@ -24,8 +24,7 @@ export default function HeadNav() {
             {menu.icon}
           </button>
         ))}
-        <button> try it kkkk</button>
       </Card>
-    </>
+    </div>
   );
 }

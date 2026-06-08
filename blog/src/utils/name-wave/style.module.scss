@@ -1,0 +1,17 @@
+.name {
+  display: inline-block;
+  color: var(--accent);
+  animation: wave 3.5s infinite;
+  animation-fill-mode: both;
+  margin-right: 2px;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

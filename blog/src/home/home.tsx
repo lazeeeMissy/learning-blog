@@ -4,6 +4,7 @@ import { menus } from "@/assets/menus";
 import { useLocation, useNavigate } from "react-router-dom";
 import Tag from "@/components/tag/tag";
 import { missyInfo } from "@/assets/info";
+import NameWave from "@/utils/name-wave/nameWave";
 
 const HomePage = () => {
   const path = useLocation();
@@ -45,7 +46,7 @@ const HomePage = () => {
         <Card className={style.cardWrapper}>
           <p>Welcome</p>
           <h1>
-            Hi, I am <span className={style.nameWave}> {missyInfo.alias}</span>
+            Hi, I am <span> {NameWave(missyInfo.alias)}</span>
           </h1>
           <p>{missyInfo.brief}</p>
           <div className={style.tagsWrapper}>

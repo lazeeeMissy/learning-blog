@@ -1,11 +1,12 @@
-import Card from "@/components/card";
+import Card from "@/components/card/card";
 import style from "./home.module.scss";
 import { menus } from "@/assets/menus";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Tag from "@/components/tag/tag";
 import { missyInfo } from "@/assets/info";
 
 const HomePage = () => {
+  const path = useLocation();
   const navigate = useNavigate();
   return (
     <div className={style.homeWrapper}>
@@ -23,7 +24,16 @@ const HomePage = () => {
           </div>
           <ul>
             {menus.map((menu) => (
-              <li onClick={() => navigate(menu.route)}>
+              // improvement: 划到中间切menu
+              <li
+                onClick={() => navigate(menu.route)}
+                className={
+                  path.pathname === menu.route ||
+                  path.pathname.startsWith(`${menu.route}/`)
+                    ? style.active
+                    : ""
+                }
+              >
                 {menu.icon}{" "}
                 <span style={{ marginLeft: "5px" }}>{menu.title}</span>
               </li>
@@ -35,7 +45,7 @@ const HomePage = () => {
         <Card className={style.cardWrapper}>
           <p>Welcome</p>
           <h1>
-            Hi, I am <span> {missyInfo.alias}</span>
+            Hi, I am <span className={style.nameWave}> {missyInfo.alias}</span>
           </h1>
           <p>{missyInfo.brief}</p>
           <div className={style.tagsWrapper}>
@@ -44,14 +54,18 @@ const HomePage = () => {
             ))}
           </div>
         </Card>
-        <Card className={style.cardWrapper}>
-          <h3>About Me</h3>
+        <Card
+          className={style.cardWrapper}
+          title="About Me"
+          tags={missyInfo.aboutMe.tags}
+        >
           <p>{missyInfo.aboutMe.content}</p>
-          <div className={style.tagsWrapper}>
-            {missyInfo.aboutMe.tags.map((tag) => (
-              <Tag className={style.tagItem}>{tag}</Tag>
-            ))}
-          </div>
+        </Card>
+        <Card className={style.cardWrapper} title="Projects">
+          <p>{missyInfo.aboutMe.content}</p>
+        </Card>
+        <Card className={style.cardWrapper} title="Experience">
+          <p>{missyInfo.aboutMe.content}</p>
         </Card>
       </section>
     </div>

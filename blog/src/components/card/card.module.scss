@@ -1,0 +1,13 @@
+.tagsWrapper {
+  display: flex;
+  width: inherit;
+  margin-top: 20px;
+  gap: 10px; //也可用下面的
+
+  .tagItem {
+    // margin: 0 10px;
+    // &:first-child {
+    //   margin-left: 0;
+    // }
+  }
+}

@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import Card from "./card";
+import Card from "./card/card";
 import { menus } from "@/assets/menus";
 
 export default function HeadNav() {

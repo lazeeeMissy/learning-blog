@@ -11,7 +11,8 @@ export type ProjectItemType = {
 export const projectsInfo: ProjectItemType[] = [
   {
     title: "NetEase Music",
-    coverUrl: "",
+    coverUrl: "/imgs/learningBlog.png",
+
     tags: ["HTML", "React", "TypeScript", "CSS"],
     link: "https://github.com/lazeeeMissy/NetEase-rebuild",
     description:
@@ -22,7 +23,7 @@ export const projectsInfo: ProjectItemType[] = [
   },
   {
     title: "White Board",
-    coverUrl: "",
+    coverUrl: "/imgs/learningBlog.png",
     tags: ["Java", "Socket"],
     link: "https://github.com/lazeeeMissy/swen90015-s2",
     description:
@@ -32,7 +33,7 @@ export const projectsInfo: ProjectItemType[] = [
   },
   {
     title: "Learning Blog",
-    coverUrl: "",
+    coverUrl: "/imgs/learningBlog.png",
     tags: ["React", "TypeScript"],
     link: "https://github.com/lazeeeMissy/learning-blog",
     description: "Just this project",

@@ -1,5 +1,6 @@
 import BlogsPage from "@/blogs/blogs";
 import HomePage from "@/home/home";
+import ProjectDetailPage from "@/projects/project/projectDetail";
 import ProjectsPage from "@/projects/projects";
 import ToolsPage from "@/tools/tools";
 const routes = [
@@ -10,6 +11,10 @@ const routes = [
   {
     path: "/projects",
     element: <ProjectsPage />,
+  },
+  {
+    path: "/projects/:projectTitle",
+    element: <ProjectDetailPage />,
   },
   {
     path: "/blogs",

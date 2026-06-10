@@ -5,6 +5,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Tag from "@/components/tag/tag";
 import { missyInfo } from "@/assets/info";
 import NameWave from "@/utils/name-wave/nameWave";
+import { projectsInfo } from "@/assets/projects";
+import ProjectCard from "@/components/projectCard/projectCard";
 
 const HomePage = () => {
   const path = useLocation();
@@ -62,8 +64,24 @@ const HomePage = () => {
         >
           <p>{missyInfo.aboutMe.content}</p>
         </Card>
-        <Card className={style.cardWrapper} title="Projects">
-          <p>{missyInfo.aboutMe.content}</p>
+        <Card
+          className={`${style.cardWrapper} ${style.projectsWrapper}`}
+          title="Projects"
+        >
+          <div className={style.projects}>
+            {projectsInfo.map((project, index) => (
+              <ProjectCard
+                title={project.title}
+                clickable={true}
+                tags={project.tags}
+                src={project.coverUrl}
+                key={project.title}
+                className={`${style.cardWrapper} ${style.projectCard}`}
+              >
+                <div style={{ color: "#eee" }}>{project.briefDes}</div>
+              </ProjectCard>
+            ))}
+          </div>
         </Card>
         <Card className={style.cardWrapper} title="Experience">
           <p>{missyInfo.aboutMe.content}</p>

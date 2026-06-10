@@ -1,0 +1,33 @@
+.tagsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  gap: 5px; //也可用下面的
+
+  .tagItem {
+    // margin: 0 10px;
+    // &:first-child {
+    //   margin-left: 0;
+    // }
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    gap: 5px;
+  }
+}
+.btnDetail {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.5s ease-in;
+  &:hover {
+    color: #fff;
+  }
+}
+h3 {
+  margin-bottom: 5px;
+}
+.img {
+  width: 100%;
+}

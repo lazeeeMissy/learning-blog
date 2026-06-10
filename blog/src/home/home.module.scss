@@ -57,6 +57,17 @@
       color: #fff;
     }
   }
+  .projectsWrapper {
+    // display: flex;
+    .projectCard {
+      width: calc(100% / 3);
+    }
+    .projects {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  }
 }
 
 //css module .tagsWrapper:first-child 这种全局 class 写法通常匹配不到，因为真实 DOM 里的 class 会被编译：

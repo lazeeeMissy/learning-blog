@@ -1,6 +1,6 @@
 .tagsWrapper {
   display: flex;
-  width: inherit;
+  flex-wrap: wrap;
   margin-top: 20px;
   gap: 10px; //也可用下面的
 

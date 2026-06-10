@@ -26,6 +26,7 @@ export default function ProjectCard({
     <div
       className={`${clickable ? "card card-clickable" : "card"} ${className}`}
       {...props}
+      onClick={() => navigate(`/projects/${title.replace(" ", "")}`)}
     >
       <div>
         {src.trim() !== "" && (

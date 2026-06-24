@@ -62,7 +62,7 @@ const HomePage = () => {
           title="About Me"
           tags={missyInfo.aboutMe.tags}
         >
-          <p>{missyInfo.aboutMe.content}</p>
+          <p style={{ whiteSpace: "pre-line" }}>{missyInfo.aboutMe.content}</p>
         </Card>
         <Card
           className={`${style.cardWrapper} ${style.projectsWrapper}`}

@@ -1,3 +1,8 @@
+type Bullet = {
+  brief: string;
+  description: string;
+};
+
 export type ProjectItemType = {
   title: string;
   coverUrl: string;
@@ -6,6 +11,9 @@ export type ProjectItemType = {
   description: string;
   time: string;
   briefDes: string;
+  demoUrl: string | null;
+  hightLights: Bullet[];
+  futureRoadmap: Bullet[];
 };
 
 export const projectsInfo: ProjectItemType[] = [
@@ -20,6 +28,14 @@ export const projectsInfo: ProjectItemType[] = [
     time: "Last update time: May",
     briefDes:
       "This is a re-build project from scratch by HTML, CSS, TypeScript",
+    demoUrl: null,
+    hightLights: [
+      {
+        brief: "",
+        description: "",
+      },
+    ],
+    futureRoadmap: [{ brief: "", description: "" }],
   },
   {
     title: "White Board",
@@ -30,6 +46,14 @@ export const projectsInfo: ProjectItemType[] = [
       "This is a course assignment to create a whiteboard and handle concurrency",
     time: "Last update time: May",
     briefDes: "my course assignment",
+    demoUrl: null,
+    hightLights: [
+      {
+        brief: "",
+        description: "",
+      },
+    ],
+    futureRoadmap: [{ brief: "", description: "" }],
   },
   {
     title: "Learning Blog",
@@ -39,5 +63,13 @@ export const projectsInfo: ProjectItemType[] = [
     description: "Just this project",
     time: "Last update time: June",
     briefDes: "this project",
+    demoUrl: null,
+    hightLights: [
+      {
+        brief: "",
+        description: "",
+      },
+    ],
+    futureRoadmap: [{ brief: "", description: "" }],
   },
 ];

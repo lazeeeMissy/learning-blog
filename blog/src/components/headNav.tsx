@@ -6,7 +6,9 @@ export default function HeadNav() {
   const path = useLocation();
   const navigate = useNavigate();
   return (
-    <div style={{ width: "180px" }}>
+    <div
+      style={{ width: "180px", position: "sticky", top: "10px", zIndex: 100 }}
+    >
       <Card style={{ marginBottom: "20px" }}>
         {menus.map((menu) => (
           <button

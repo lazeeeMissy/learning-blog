@@ -12,7 +12,8 @@ export type SelfInfoType = {
 export const missyInfo: SelfInfoType = {
   alias: "Missy",
   location: "Melbourne, AU",
-  brief: "I build this web to practice... You can find me from following links",
+  brief:
+    "Here you'll find my projects, technical skills, and development journey. You can find me from following links",
   links: [
     {
       item: "LinkedIn",

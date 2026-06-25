@@ -99,11 +99,33 @@ const HomePage = () => {
       <section className={style.rightWrapper}>
         {/* welcome */}
         <Card className={style.cardWrapper}>
-          <p>Welcome</p>
+          <p>Welcome to my portfolio! </p>
           <h1>
             Hi, I am <span> {NameWave(missyInfo.alias)}</span>
           </h1>
+          <p>Software Engineering Graduate</p>
           <p>{missyInfo.brief}</p>
+          <div className={style.tagsWrapper}>
+            <a
+              href="https://www.linkedin.com/in/meilin-wu-884025323/"
+              target="_blank"
+            >
+              <img
+                src={linkedinLogo}
+                alt="https://www.linkedin.com/in/meilin-wu-884025323/"
+              />
+            </a>
+            <a href="https://github.com/lazeeeMissy" target="_blank">
+              <img src={githubBlue} alt="https://github.com/lazeeeMissy" />
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=missywu1121@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MdEmail size={25} />
+            </a>
+          </div>
         </Card>
         <Card
           className={style.cardWrapper}

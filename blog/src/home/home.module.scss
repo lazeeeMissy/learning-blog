@@ -46,6 +46,54 @@
       transition: all 0.3s ease;
     }
   }
+  .educationWrapper {
+    margin-top: 10px;
+    .degree,
+    .year,
+    .uniName {
+      overflow-wrap: anywhere;
+    }
+    .uniTitle {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      .uniName {
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .uniContent {
+      margin: 10px 0 20px 0;
+      display: flex;
+      min-height: 150px;
+      height: max-content;
+      min-width: 0;
+      .bar {
+        margin-left: 30px;
+        border-radius: 5px;
+        border-left: rgba(0, 242, 254, 0.5) solid 3px;
+      }
+      div {
+        margin-left: 35px;
+        .degree {
+          margin-top: 5px;
+          color: white;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+        .year {
+          color: #9ca3af;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
 }
 
 .rightWrapper {
@@ -71,9 +119,16 @@
 }
 
 //css module .tagsWrapper:first-child 这种全局 class 写法通常匹配不到，因为真实 DOM 里的 class 会被编译：
-// .tagsWrapper:first-child {
-//   margin: 0;
-// }
+.tagsWrapper {
+  margin: 10px 0 0 5px;
+  display: flex;
+  gap: 20px;
+  img {
+    width: 25px;
+    height: 25px;
+    border-radius: 999px;
+  }
+}
 
 .nameWave {
   display: inline-block;

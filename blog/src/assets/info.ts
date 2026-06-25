@@ -16,15 +16,15 @@ export const missyInfo: SelfInfoType = {
   links: [
     {
       item: "LinkedIn",
-      url: "null",
+      url: "https://www.linkedin.com/in/meilin-wu-884025323/",
     },
     {
       item: "GitHub",
-      url: "null",
+      url: "https://github.com/lazeeeMissy",
     },
     {
-      item: "Email",
-      url: "null",
+      item: "Gmail",
+      url: "missywu1121@gmail.com",
     },
   ],
   aboutMe: {

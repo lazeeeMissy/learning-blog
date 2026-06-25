@@ -2,6 +2,7 @@ functionality
 [] project card
 [] education timeline
 [] search
+[] resume
 
 - home: Projects
   - [] responsive layout

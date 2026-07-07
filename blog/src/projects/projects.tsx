@@ -1,13 +1,15 @@
-import { useNavigate, useParams } from "react-router-dom";
-import style from "./projects.module.scss";
+import { useNavigate } from "react-router-dom";
+import Card from "@/components/card/card";
 import { projectsInfo } from "@/assets/projects";
+
 const ProjectsPage = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <Card title="Projects">
       <ul>
         {projectsInfo.map((project) => (
           <li
+            key={project.title}
             onClick={() =>
               navigate(`/projects/${project.title.replace(" ", "")}`)
             }
@@ -16,7 +18,7 @@ const ProjectsPage = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </Card>
   );
 };
 

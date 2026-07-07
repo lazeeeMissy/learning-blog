@@ -12,7 +12,6 @@ import ProjectCard from "@/components/projectCard/projectCard";
 import unimelbLogo from "@/assets/unimelblogo.png";
 import southwestLogo from "@/assets/southwestlogo.png";
 import linkedinLogo from "@/assets/imgs/linkedin.png";
-import github from "@/assets/imgs/github.png";
 import githubBlue from "@/assets/imgs/githubblue.png";
 
 const HomePage = () => {
@@ -139,7 +138,7 @@ const HomePage = () => {
           title="Projects"
         >
           <div className={style.projects}>
-            {projectsInfo.map((project, index) => (
+            {projectsInfo.map((project) => (
               <ProjectCard
                 title={project.title}
                 clickable={true}
@@ -148,7 +147,7 @@ const HomePage = () => {
                 key={project.title}
                 className={`${style.cardWrapper} ${style.projectCard}`}
               >
-                <div style={{ color: "#eee" }}>{project.briefDes}</div>
+                <div>{project.briefDes}</div>
               </ProjectCard>
             ))}
           </div>

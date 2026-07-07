@@ -1,5 +1,4 @@
 .tag {
-  // color: #ccfbf1;
   display: inline-flex;
   padding: 3px 10px;
   font-size: 0.9rem;
@@ -9,13 +8,10 @@
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background:
-    linear-gradient(180deg, rgba(45, 212, 191, 0.16), rgba(15, 118, 110, 0.12)),
-    rgba(15, 23, 42, 0.3);
-  border: 1px solid rgba(94, 234, 212, 0.32);
-  box-shadow:
-    inset rgba(255, 255, 255, 0.08) 0 1px 0,
-    rgba(45, 212, 191, 0.12) 0 0 18px;
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  box-shadow: var(--tag-shadow);
 
   white-space: normal;
   overflow-wrap: anywhere;

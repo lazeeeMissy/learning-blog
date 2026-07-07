@@ -1,15 +1,86 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  --text: #625b71;
+  --text-h: #17121f;
+  --bg: #f8f5ff;
+  --border: #ded8e8;
+  --code-bg: #eee8f7;
+  --accent: #7c3aed;
+  --accent-bg: rgba(124, 58, 237, 0.1);
+  --accent-border: rgba(124, 58, 237, 0.38);
+  --social-bg: rgba(255, 255, 255, 0.7);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(88, 63, 126, 0.12) 0 14px 34px -18px,
+    rgba(88, 63, 126, 0.08) 0 6px 14px -10px;
+
+  --card-bg:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 245, 255, 0.92)),
+    rgba(255, 255, 255, 0.9);
+
+  --card-bg-hover:
+    linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(245, 239, 255, 0.98)),
+    rgba(255, 255, 255, 0.96);
+
+  --card-bg-active:
+    linear-gradient(180deg, rgba(237, 233, 254, 0.88), rgba(255, 255, 255, 0.98)),
+    rgba(255, 255, 255, 0.98);
+
+  --card-border: rgba(124, 58, 237, 0.16);
+  --card-border-hover: rgba(124, 58, 237, 0.34);
+  --card-border-active: rgba(20, 184, 166, 0.5);
+
+  --card-shadow:
+    inset rgba(255, 255, 255, 0.9) 0 1px 0,
+    rgba(88, 63, 126, 0.14) 0 14px 34px -20px;
+
+  --card-shadow-hover:
+    inset rgba(255, 255, 255, 0.95) 0 1px 0,
+    rgba(124, 58, 237, 0.16) 0 0 0 1px,
+    rgba(88, 63, 126, 0.2) 0 20px 38px -22px;
+
+  --card-shadow-active:
+    inset rgba(255, 255, 255, 0.8) 0 1px 0,
+    rgba(88, 63, 126, 0.12) 0 8px 18px -14px;
+
+  --card-button-bg:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 240, 252, 0.88)),
+    rgba(255, 255, 255, 0.9);
+
+  --card-button-bg-hover:
+    linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(237, 233, 254, 0.95)),
+    rgba(255, 255, 255, 0.96);
+
+  --card-button-active-bg:
+    radial-gradient(circle at 35% 24%, rgba(255, 255, 255, 0.72), transparent 34%),
+    linear-gradient(180deg, rgba(94, 234, 212, 0.96), rgba(20, 184, 166, 0.86));
+
+  --card-button-border: rgba(124, 58, 237, 0.16);
+  --card-button-border-hover: rgba(124, 58, 237, 0.3);
+  --card-button-border-active: rgba(15, 118, 110, 0.45);
+
+  --card-button-text: var(--text);
+  --card-button-text-active: #032f2c;
+
+  --card-button-shadow:
+    inset rgba(255, 255, 255, 0.9) 0 1px 0,
+    rgba(88, 63, 126, 0.1) 0 8px 16px -12px;
+
+  --card-button-shadow-hover:
+    inset rgba(255, 255, 255, 0.95) 0 1px 0,
+    rgba(124, 58, 237, 0.16) 0 10px 18px -12px;
+
+  --card-button-shadow-active:
+    inset rgba(255, 255, 255, 0.52) 0 1px 0,
+    rgba(45, 212, 191, 0.32) 0 0 18px,
+    rgba(45, 212, 191, 0.18) 0 12px 22px -10px;
+
+  --tag-text: #115e59;
+  --tag-bg:
+    linear-gradient(180deg, rgba(240, 253, 250, 0.94), rgba(204, 251, 241, 0.52)),
+    rgba(255, 255, 255, 0.72);
+  --tag-border: rgba(20, 184, 166, 0.34);
+  --tag-shadow:
+    inset rgba(255, 255, 255, 0.82) 0 1px 0,
+    rgba(20, 184, 166, 0.12) 0 0 18px;
 
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
@@ -138,96 +209,105 @@
       rgba(45, 212, 191, 0.5) 0 0 22px,
       rgba(45, 212, 191, 0.28) 0 12px 26px -8px,
       rgba(0, 0, 0, 0.5) 0 14px 24px -12px;
+
+    --tag-text: #ccfbf1;
+    --tag-bg:
+      linear-gradient(180deg, rgba(45, 212, 191, 0.16), rgba(15, 118, 110, 0.12)),
+      rgba(15, 23, 42, 0.3);
+    --tag-border: rgba(94, 234, 212, 0.32);
+    --tag-shadow:
+      inset rgba(255, 255, 255, 0.08) 0 1px 0,
+      rgba(45, 212, 191, 0.12) 0 0 18px;
   }
 
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
+}
 
-  .card {
-    width: 100%;
-    padding: 5px 15px;
-    margin-bottom: 10px;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 28px;
-    box-shadow: var(--card-shadow);
-    position: relative;
+.card {
+  width: 100%;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 28px;
+  box-shadow: var(--card-shadow);
+  position: relative;
 
-    transition:
-      background 180ms ease,
-      border-color 180ms ease,
-      box-shadow 180ms ease;
-  }
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
 
-  .card-clickable {
-    cursor: pointer;
+.card-clickable {
+  cursor: pointer;
 
-    transition:
-      background 180ms ease,
-      border-color 180ms ease,
-      box-shadow 180ms ease,
-      transform 180ms ease;
-  }
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
 
-  .card-clickable:hover {
-    background: var(--card-bg-hover);
-    border-color: var(--card-border-hover);
-    box-shadow: var(--card-shadow-hover);
-    transform: translateY(-2px);
-  }
+.card-clickable:hover {
+  background: var(--card-bg-hover);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
 
-  .card-clickable:active {
-    background: var(--card-bg-active);
-    border-color: var(--card-border-active);
-    box-shadow: var(--card-shadow-active);
-    transform: translateY(0);
-  }
+.card-clickable:active {
+  background: var(--card-bg-active);
+  border-color: var(--card-border-active);
+  box-shadow: var(--card-shadow-active);
+  transform: translateY(0);
+}
 
-  .card button {
-    padding: 8px 8px;
-    margin: 0 4px;
+.card button {
+  padding: 8px 8px;
+  margin: 0 4px;
 
-    display: inline-grid;
-    place-items: center;
+  display: inline-grid;
+  place-items: center;
 
-    color: var(--card-button-text);
-    background: var(--card-button-bg);
-    border: 1px solid var(--card-button-border);
-    border-radius: 999px;
-    box-shadow: var(--card-button-shadow);
+  color: var(--card-button-text);
+  background: var(--card-button-bg);
+  border: 1px solid var(--card-button-border);
+  border-radius: 999px;
+  box-shadow: var(--card-button-shadow);
 
-    font: inherit;
-    line-height: 1;
-    cursor: pointer;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
 
-    transition:
-      background 160ms ease,
-      border-color 160ms ease,
-      box-shadow 160ms ease,
-      color 160ms ease,
-      transform 160ms ease;
-  }
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
 
-  .card button:hover {
-    background: var(--card-button-bg-hover);
-    border-color: var(--card-button-border-hover);
-    box-shadow: var(--card-button-shadow-hover);
-    transform: translateY(-1px);
-  }
+.card button:hover {
+  background: var(--card-button-bg-hover);
+  border-color: var(--card-button-border-hover);
+  box-shadow: var(--card-button-shadow-hover);
+  transform: translateY(-1px);
+}
 
-  .card button:active {
-    transform: translateY(0) scale(0.96);
-  }
+.card button:active {
+  transform: translateY(0) scale(0.96);
+}
 
-  .card button.active,
-  .card button[aria-current="page"],
-  .card button[aria-pressed="true"] {
-    color: var(--card-button-text-active);
-    background: var(--card-button-active-bg);
-    border-color: var(--card-button-border-active);
-    box-shadow: var(--card-button-shadow-active);
-  }
+.card button.active,
+.card button[aria-current="page"],
+.card button[aria-pressed="true"] {
+  color: var(--card-button-text-active);
+  background: var(--card-button-active-bg);
+  border-color: var(--card-button-border-active);
+  box-shadow: var(--card-button-shadow-active);
 }
 
 body {
@@ -246,7 +326,7 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
-  @media (max-width: 100%) {
+  @media (max-width: 640px) {
     font-size: 36px;
     margin: 20px 0;
   }
@@ -256,7 +336,7 @@ h2 {
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
-  @media (max-width: 100%) {
+  @media (max-width: 640px) {
     font-size: 20px;
   }
 }

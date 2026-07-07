@@ -1,6 +1,11 @@
-import style from "./tools.module.scss";
+import Card from "@/components/card/card";
+
 const ToolsPage = () => {
-  return <div>ToolsPage</div>;
+  return (
+    <Card title="Tools">
+      <p>Useful tools and experiments are coming soon.</p>
+    </Card>
+  );
 };
 
 export default ToolsPage;

@@ -17,16 +17,16 @@ export const menus: MenuItem[] = [
     route: "/projects",
     description: "my projects",
   },
-  {
-    icon: "📜",
-    title: "blogs",
-    route: "/blogs",
-    description: "my blog",
-  },
-  {
-    icon: "🛠️",
-    title: "tools",
-    route: "/tools",
-    description: "my tools",
-  },
+  // {
+  //   icon: "📜",
+  //   title: "blogs",
+  //   route: "/blogs",
+  //   description: "my blog",
+  // },
+  // {
+  //   icon: "🛠️",
+  //   title: "tools",
+  //   route: "/tools",
+  //   description: "my tools",
+  // },
 ];

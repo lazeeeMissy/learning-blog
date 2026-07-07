@@ -181,6 +181,16 @@ const HomePage = () => {
             ))}
           </div>
         </Card>
+        {/* <Card className={style.cardWrapper} title="Interests">
+          <div className={style.interestsList}>
+            <ul>
+              <li>
+                <span>🎮</span>
+                <span>Gaming</span>
+              </li>
+            </ul>
+          </div>
+        </Card> */}
       </section>
     </div>
   );

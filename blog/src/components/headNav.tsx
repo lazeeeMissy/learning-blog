@@ -5,9 +5,10 @@ import { menus } from "@/assets/menus";
 export default function HeadNav() {
   const path = useLocation();
   const navigate = useNavigate();
+  //  width: "180px"
   return (
     <div
-      style={{ width: "180px", position: "sticky", top: "10px", zIndex: 100 }}
+      style={{ width: "90px", position: "sticky", top: "10px", zIndex: 100 }}
     >
       <Card style={{ marginBottom: "20px" }}>
         {menus.map((menu) => (

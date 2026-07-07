@@ -50,12 +50,12 @@ export const projectsInfo: ProjectItemType[] = [
       {
         brief: "Improve playback and user state",
         description:
-          "Expand the player store, playlist queue behavior, and authenticated user flows so the app feels closer to a full music client.",
+          "Expand authenticated user flows makes the app feels closer to a full music platform.",
       },
       {
         brief: "Polish responsiveness and deployment",
         description:
-          "Refine mobile layouts, add loading and error states, and prepare a production deployment with a stable backend configuration.",
+          "Refine mobile layouts, add loading and error states makes the app more user-friendly.",
       },
     ],
   },
@@ -88,11 +88,7 @@ export const projectsInfo: ProjectItemType[] = [
       },
     ],
     futureRoadmap: [
-      {
-        brief: "Strengthen concurrency handling",
-        description:
-          "Add more robust stress testing around simultaneous drawing, joining, leaving, and manager actions to validate behavior under heavier collaboration.",
-      },
+
       {
         brief: "Improve packaging and documentation",
         description:
@@ -138,6 +134,11 @@ export const projectsInfo: ProjectItemType[] = [
         brief: "Improve mobile UX and observability",
         description:
           "Refine responsive layouts for driver/rider flows and add logging/monitoring for production debugging.",
+      },
+      {
+        brief: "Enhance login and authentication",
+        description:
+          "Enhance login and authentication, add more secure and user-friendly login and authentication flows.",
       },
     ],
   },

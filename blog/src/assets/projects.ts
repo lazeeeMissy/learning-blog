@@ -20,7 +20,7 @@ export type ProjectItemType = {
 export const projectsInfo: ProjectItemType[] = [
   {
     title: "NetEase Rebuild",
-    coverUrl: "/imgs/musicDashboard.png",
+    coverUrl: `${import.meta.env.BASE_URL}imgs/musicDashboard.png`,
     tags: ["TypeScript", "React", "Vite", "MobX", "Ant Design"],
     link: "https://github.com/lazeeeMissy/NetEase-rebuild",
     responsibilities: ["Frontend Developer", "API Integration"],
@@ -61,7 +61,7 @@ export const projectsInfo: ProjectItemType[] = [
   },
   {
     title: "White Board",
-    coverUrl: "/imgs/whiteBoard.png",
+    coverUrl: `${import.meta.env.BASE_URL}imgs/whiteBoard.png`,
     tags: ["Java", "Socket", "Swing", "Gson", "PDFBox"],
     link: "https://github.com/lazeeeMissy/swen90015-s2",
     responsibilities: ["Backend Developer"],
@@ -98,7 +98,7 @@ export const projectsInfo: ProjectItemType[] = [
   },
   {
     title: "RideShare",
-    coverUrl: "/imgs/riderDashboard.png",
+    coverUrl: `${import.meta.env.BASE_URL}imgs/riderDashboard.png`,
     tags: ["TypeScript", "React", "Java", "PostgreSQL", "JMeter"],
     link: "https://github.com/SWEN90007-2025-sem2/Team-Tam",
     description:

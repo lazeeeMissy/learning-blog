@@ -3,6 +3,7 @@ import HeadNav from "./components/headNav";
 import routes from "./router/route";
 
 function App() {
+  console.log(import.meta.env.BASE_URL);
   return (
     <div>
       <HeadNav />

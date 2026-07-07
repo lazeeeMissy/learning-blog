@@ -153,7 +153,33 @@ const HomePage = () => {
           </div>
         </Card>
         <Card className={style.cardWrapper} title="Experience">
-          <p>{missyInfo.aboutMe.content}</p>
+          <div className={style.experienceList}>
+            {missyInfo.experience.map((item) => (
+              <section
+                className={style.experienceItem}
+                key={`${item.company}-${item.role}`}
+              >
+                <div className={style.experienceHeader}>
+                  <h3>{item.role}</h3>
+                  <p className={style.experienceTime}>{item.period}</p>
+                </div>
+                <p className={style.experienceBrief}>{item.company}</p>
+                <p className={style.experienceLocation}>{item.location}</p>
+                <div className={style.experienceTags}>
+                  {item.techStack.map((tag) => (
+                    <Tag key={`${item.company}-${tag}`}>{tag}</Tag>
+                  ))}
+                </div>
+                <ul className={style.experienceHighlights}>
+                  {item.achievements.map((achievement) => (
+                    <li key={`${item.company}-${achievement.slice(0, 40)}`}>
+                      {achievement}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
         </Card>
       </section>
     </div>
